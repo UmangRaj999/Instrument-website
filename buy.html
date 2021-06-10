@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Buy</title>
+    <style>
+        #navbar {
+            display: flex;
+            background: #cc6a08;
+            margin: -9px;
+            padding: 0px;
+        }
+
+        #navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 6px;
+            padding: 3px;
+            margin-left: 49px;
+            padding-left: 5px;
+
+        }
+
+        #navbar li a {
+            font-family: 'Fredoka One', cursive;
+            display: inline-block;
+            text-decoration: none;
+            margin: 8px;
+            padding: 6px;
+            margin-left: 9px;
+            padding-left: 8px;
+            color: black;
+            font-size: 17px;
+
+        }
+
+        #navbar li a:hover {
+            color: white;
+        }
+
+        .haider {
+            margin: 55px;
+            padding: 11px;
+            margin-left: 495px;
+            font-size: 30px;
+        }
+
+        .box-1 {
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+        }
+
+        .box-2 {
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+            margin: 1px;
+            margin-top: -269px;
+            margin-left: 455px;
+        }
+
+        .box-3 {
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+            margin: 1px;
+            margin-top: -272px;
+            margin-left: 919px;
+        }
+
+        .box-4 {
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .box-5 {
+
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+            margin-left: 455px;
+            margin-top: -267px;
+        }
+
+        .box-6 {
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+            margin-left: 920px;
+            margin-top: -267px;
+        }
+
+        .box-7 {
+            border: 2px solid red;
+            height: 265px;
+            width: 371px;
+            margin-left: 455px;
+            margin-top: 30px;
+        }
+
+        .guitar {
+            height: 204px;
+            width: 362px
+        }
+
+        .sitar {
+            height: 213px;
+            width: 362px
+        }
+
+        .drum {
+            height: 213px;
+            width: 362px
+        }
+
+        .violin {
+
+            height: 237px;
+            width: 221px;
+            margin: 4px;
+            margin-left: 48px;
+        }
+
+        .trumpet {
+            height: 213px;
+            width: 362px
+        }
+
+        .harmonium {
+            height: 213px;
+            width: 362px
+        }
+
+        .drrum {
+            height: 213px;
+            width: 372px
+        }
+
+        .guitar-head {
+            margin: 10px;
+            font-size: 20px;
+
+
+        }
+
+        .sitar-head {
+            margin: 4px;
+            margin-left: 10px;
+            font-size: 20px;
+
+        }
+
+        .drum-head {
+            margin: 5px;
+            font-size: 20px;
+
+        }
+
+        .violin-head {
+            margin-top: -18px;
+            margin-left: 10px;
+            font-size: 20px;
+
+        }
+
+        .trumpet-head {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .harmonium-head {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .drrum-head {
+            margin: 10px;
+            font-size: 20px;
+
+        }
+        img:hover{
+            transform: translateY(23px);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="item1" onclick="item1clicked()"><a href="#home">Home</a></li>
+            <li class="item2" onclick="item2clicked()"><a href="#Buy">Buy</a></li>
+            <li class="item3" onclick="item3clicked()"><a href="#I.info">Instruments Info</a></li>
+            <li class="item4" onclick="item4clicked()"><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <header class="haider"> Buy the Instruments</header>
+    <div class="container">
+        <div class="box-1">
+            <img class="guitar" src="img/electric-guitar.png" alt="">
+            <h1 class="guitar-head">Guitar-Rs.80,000</h1>
+        </div>
+        <div class="box-2">
+            <img class="sitar" src="img/sitar.jpg" alt="">
+            <h1 class="sitar-head"> Sitar-Rs.75,000</h1>
+        </div>
+        <div class="box-3">
+            <img class="drum" src="img/drum-set.jpg" alt="">
+            <h1 class="drum-head"> Drum-Rs.30,000</h1>
+        </div>
+        <div class="box-4">
+            <img class="violin" src="img/violin.png" alt="">
+            <h1 class="violin-head"> Violin-Rs.55,000</h1>
+        </div>
+        <div class="box-5">
+            <img class="trumpet" src="img/trumpet.png" alt="">
+            <h1 class="trumpet-head"> Trumpet-Rs. 7,000</h1>
+        </div>
+        <div class="box-6">
+            <img class="harmonium" src="img/harmonium.jpg" alt="">
+            <h1 class="harmonium-head">Harmonium-Rs. 50,000</h1>
+        </div>
+        <div class="box-7">
+            <img class="drrum" src="img/snare-drum.jpg" alt="">
+            <h1 class="drrum-head"> Drum-Rs. 22,000</h1>
+        </div>
+
+    </div>
+    <script>
+        function item1clicked(){
+            document.location.href="Home.html"
+        }
+        function item2clicked(){
+            document.location.href="buy.html"
+        }
+        function item3clicked(){
+            document.location.href="instruments.html"
+        }
+        function item4clicked() {
+            document.location.href = "contact.html"
+        }
+    </script>
+  
+
+
+
+
+
+</body>
+
+</html>

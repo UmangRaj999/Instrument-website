@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Dholnagada.com</title>
+    <style>
+        #navbar {
+            display: flex;
+            background: #d42d5b;
+            margin: -9px;
+            padding: 0px;
+        }
+
+        #navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 6px;
+            padding: 3px;
+            margin-left: 49px;
+            padding-left: 5px;
+
+        }
+
+        #navbar li a {
+            font-family: 'Fredoka One', cursive;
+            display: inline-block;
+            text-decoration: none;
+            margin: 8px;
+            padding: 6px;
+            margin-left: 9px;
+            padding-left: 8px;
+            color: black;
+            font-size: 17px;
+
+        }
+
+        #navbar li a:hover {
+            color: white;
+        }
+
+
+
+        .beauty {
+            margin: -8px;
+            padding: 0px;
+            height: 760px;
+            width: 1368px;
+
+
+        }
+
+        .haider {
+            margin: 5px;
+            padding: 0px;
+            margin-top: -532px;
+            margin-left: 462px;
+
+            font-size: 46px;
+            color: white;
+        }
+
+        .h1 {
+            margin-left: 526px;
+            margin-top: 10px;
+            color: white;
+            font-size: 19px;
+        }
+
+        .search {
+            margin: 1px;
+            margin-left: 517px;
+            padding: 5px;
+            padding-left: 30px;
+            font-size: 10px;
+        }
+        
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="item1" onclick="item1clicked()"><a href="#home">Home</a></li>
+            <li class="item2" onclick="item2clicked()"><a href="#Buy">Buy</a></li>
+            <li class="item3" onclick="item3clicked()"><a href="#I.info">Instruments Info</a></li>
+            <li class="item4" onclick="item4clicked()"><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <section id="home">
+        <img class="beauty" src="./Home image.jpg" alt="">
+        <header class="haider">Dhol Nagada.com</header>
+        <h1 class="h1">Let the Music Speak! </h1>
+        <input class="search" type="text" name="Search instrument" placeholder="SEARCH INSTRUMENT">
+    </section>
+    <script>
+        
+        function item1clicked(){
+            document.location.href="Home.html"
+        }
+        function item2clicked(){
+            document.location.href="buy.html"
+        }
+        function item3clicked(){
+            document.location.href="instruments.html"
+        }
+        function item4clicked() {
+            document.location.href = "contact.html"
+        }
+       
+    </script>
+
+</body>
+
+</html>

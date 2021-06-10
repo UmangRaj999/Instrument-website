@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Dholnagada.com</title>
+    <style>
+        body {
+            background: grey;
+        }
+
+        #navbar {
+            display: flex;
+            background: #aecc08;
+            margin: -9px;
+            padding: 0px;
+        }
+
+        #navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 6px;
+            padding: 3px;
+            margin-left: 49px;
+            padding-left: 5px;
+
+        }
+
+        #navbar li a {
+            font-family: 'Fredoka One', cursive;
+            display: inline-block;
+            text-decoration: none;
+            margin: 8px;
+            padding: 6px;
+            margin-left: 9px;
+            padding-left: 8px;
+            color: rgb(0, 0, 0);
+            font-size: 19px;
+
+        }
+
+        #navbar li a:hover {
+            color: white;
+
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 30px;
+            margin: 19px;
+        }
+
+        .container {
+            background: white;
+            height: 498px;
+            width: 891px;
+            margin: 91px;
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+
+        .name {
+            margin-left: 218px;
+            margin-top: 57px;
+            padding: 5px;
+            padding-left: 154px;
+            padding-left: 154px;
+            width: 294px
+        }
+
+        .email {
+            margin-left: 220px;
+            padding: 5px;
+            padding-left: 153px;
+            padding-right: 3px;
+            margin-top: 42px;
+            width: 295px;
+
+        }
+
+        .mobile {
+            margin: 10px;
+            margin-left: 221px;
+            padding: 5px;
+            padding-left: 156px;
+            margin-top: 39px;
+            width: 290px;
+
+        }
+
+        .message {
+            height: 164px;
+            width: 284px;
+            margin-left: 218px;
+            padding-left: 171px;
+            margin-top: 27px;
+        }
+
+        .btn {
+            align-items: center;
+            margin-left: 394px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li class="item1" onclick="item1clicked()"><a href="#home">Home</a></li>
+            <li class="item2" onclick="item2clicked()"><a href="#Buy">Buy</a></li>
+            <li class="item3" onclick="item3clicked()"><a href="#I.info">Instruments Info</a></li>
+            <li class="item4" onclick="item4clicked()"><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <form action="action.php">
+        <header class="contact">Contact Us</header>
+        <div class="container">
+
+            <input class="name" type="text" name="input" placeholder=" Name">
+
+            <input class="email" type="text" name="input" placeholder=" Email Id">
+
+            <input class="mobile" type="text" name="input" placeholder=" Mobile">
+
+            <input class="message" type="text" name="input" placeholder=" Message">
+            <br>
+
+            <button class="btn" onclick="btnclicked()">Submit</button>
+        </div>
+    </form>
+
+
+    <script>
+
+        function item1clicked() {
+            document.location.href = "Home.html"
+        }
+        function item2clicked() {
+            document.location.href = "buy.html"
+        }
+        function item3clicked() {
+            document.location.href = "instruments.html"
+        }
+        function item4clicked() {
+            document.location.href = "contact.html"
+        }
+        function btnclicked() {
+            
+            alert("Thank you for your time.Your message has been submitted!")
+        }
+    </script>
+
+</body>
+
+</html>
